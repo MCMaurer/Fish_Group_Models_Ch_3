@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ToDo</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="/Users/MJ/Documents/pandoc.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="to-do">To Do</h1>
+<h2 id="list-of-questionsmodels">List of Questions/Models</h2>
+<ol type="1">
+<li>Are there differences in overall aggression between groups of different sizes?
+<ul>
+<li>total group chases per day ~ group size + trial + (1|group_ID)</li>
+</ul></li>
+<li>Is there individual consistency in total aggression?
+<ul>
+<li>individual chases per day ~ length + weight + trial + group_size</li>
+</ul></li>
+<li>Is there consistency in individual representation in overall group aggression? Ie is there consistency in ind_chases / group_chases per day?</li>
+<li><strong>THIS IS PRIORITY</strong> Is food consumption determined by dominance rank?
+<ul>
+<li>pellet_order ~ rankformula + group_size + weight + (1|group) + (1|fish_id)</li>
+<li>pellet_bites ~ rankformula +</li>
+<li>novel_order ~ rankformula +</li>
+<li>novel_bites ~ rankformula +</li>
+</ul></li>
+<li>Is there an imbalance within groups in terms of chases and bites? Like, do 1 or 2 individuals do the majority of the chases or take the majority of bites? Need to check this against</li>
+<li>Do fish reach some stable point in the group hierarchy? You could model this by looking at each fish’s ranks at each time point, and calculating whether they change between time points. Whether or not they change is now the response variable, and you look at that over time and between group sizes. You could even try to look at whether they move up or down. You could ask what their previous rank was and whether that had an effect. Like, are you less likely to move from dominant than from submissive or middle?</li>
+</ol>
+<h1 id="from-files">From Files</h1>
+<h4 id="via-todo.fish">via todo.fish</h4>
+<p>./model_scripts/group_chases_offset_zinb.R:31:# TODO: looks like there aren’t really temporal trends going on here, I think the trials are more or less independent, but it’s worth checking for any temporal autocorrelation here</p>
+<p>./model_scripts/group_chases_offset_zinb.R:33:# TODO: read up on the offset function here and make sure I’m using it correctly</p>
+</body>
+</html>

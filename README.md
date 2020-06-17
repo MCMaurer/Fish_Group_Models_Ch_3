@@ -6,5 +6,5 @@ This project tracked individuals across 10 days within groups of 2, 3, or 4. Ind
 
 ## Data Structure and Model Structure Issues
 
-## Questions
 
+ 
