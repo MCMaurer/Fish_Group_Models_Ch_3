@@ -16,6 +16,8 @@ d <- read_xlsx("data/raw_data/Ch 3 Data_Updated rank IDS (changing unk to dom).x
 d <- d %>% 
   mutate(novel_bites = as.numeric(novel_bites),
          novel_order = as.numeric(novel_order),
+         pellet_bites = as.numeric(pellet_bites),
+         pellet_order = as.numeric(pellet_order),
          group = as.character(group),
          tank = as.character(tank)) %>% 
   select(group, fish_id, group_size, chase, chased, in_refuge, rankformula, pellet_bites, pellet_order, novel_bites, novel_order, trial, weight, length, observer, tank, date, time)

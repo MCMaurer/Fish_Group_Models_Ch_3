@@ -47,4 +47,4 @@ launch_shinystan(model)
 waic(typ_int, model)
 
 # save model
-saveRDS(model, "")
+saveRDS(model, "fitted_models/group_chases_offset_zinb.rds")
